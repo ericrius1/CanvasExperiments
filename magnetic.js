@@ -4,7 +4,7 @@ Magnetic = new function() {
   var SCREEN_HEIGHT = window.innerHeight;
   
   var MAGNETS = 4;
-  var PARTICLES_PER_MAGNET = 20;
+  var PARTICLES_PER_MAGNET = 500;
 
   var canvas;
   var context;
@@ -253,7 +253,7 @@ function Particle() {
   this.angle = 0;
   this.speed = 0.01+Math.random()*0.03;
   this.force = 1 - (Math.random()*0.05);
-  this.fillColor = '#ffffff';
+  this.fillColor = '#ff00ff';
   this.orbit = 1;
 }
 
